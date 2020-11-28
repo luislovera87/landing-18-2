@@ -36,7 +36,6 @@ export default {
 <style lang="scss">
 html,
 body {
-  overflow: hidden;
   font-family: Open Sans, Arial, sans-serif;
   font-size: 14px;
   color: #666;
