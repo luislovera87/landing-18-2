@@ -1,0 +1,7 @@
+.v-card {
+    &.v-sheet--outlined {
+        &.card-border-none {
+            border: none !important;
+        }
+    }
+}

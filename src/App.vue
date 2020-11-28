@@ -1,19 +1,32 @@
 <template>
   <v-app>
     <v-main>
-      <Main />
+      <v-container fluid class="pa-0 pa-lg-0">
+        <SectionOne />
+        <SectionTwo />
+        <v-row>
+          <v-col cols="12" lg="12">
+            <v-divider></v-divider>
+          </v-col>
+        </v-row>
+        <SectionThree />
+      </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Main from "./components/Main";
+import SectionOne from "./components/SectionOne.vue";
+import SectionTwo from "./components/SectionTwo.vue";
+import SectionThree from "./components/SectionThree.vue";
 
 export default {
   name: "App",
 
   components: {
-    Main,
+    SectionOne,
+    SectionTwo,
+    SectionThree,
   },
 
   data: () => ({
@@ -25,6 +38,7 @@ export default {
 <style lang="scss">
 html,
 body {
+  overflow: hidden;
   font-family: Open Sans, Arial, sans-serif;
   font-size: 14px;
   color: #666;
@@ -34,31 +48,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.default-text-medium {
-  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
-  font-size: 18px;
-  line-height: 1.8em;
-  color: rgba(22, 28, 45, 0.7) !important;
-}
-
-.percent-box {
-  .percent {
-    margin: auto;
-    height: 72px;
-    p {
-      font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
-      font-weight: 700;
-      font-size: 50px;
-      color: #161c2d !important;
-      letter-spacing: -2px;
-      line-height: 42px;
-      text-align: center;
-    }
-  }
-  .percent-description {
-    margin: auto;
-    margin-bottom: 30px;
-    max-width: 275px;
-  }
+body,
+input,
+textarea,
+select {
+  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
 }
 </style>
