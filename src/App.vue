@@ -4,11 +4,7 @@
       <v-container fluid class="pa-0 pa-lg-0">
         <SectionOne />
         <SectionTwo />
-        <v-row>
-          <v-col cols="12" lg="12">
-            <v-divider></v-divider>
-          </v-col>
-        </v-row>
+        <DefaultDivider />
         <SectionThree />
       </v-container>
     </v-main>
@@ -19,6 +15,7 @@
 import SectionOne from "./components/SectionOne.vue";
 import SectionTwo from "./components/SectionTwo.vue";
 import SectionThree from "./components/SectionThree.vue";
+import DefaultDivider from "./components/DefaultDivider.vue";
 
 export default {
   name: "App",
@@ -27,6 +24,7 @@ export default {
     SectionOne,
     SectionTwo,
     SectionThree,
+    DefaultDivider,
   },
 
   data: () => ({
