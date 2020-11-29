@@ -7,7 +7,7 @@
   >
     <v-col cols="12" lg="5" md="6" sm="12" class="mx-auto mx-lg-auto">
       <v-row no-gutters justify="center" align="center">
-        <v-col cols="12" lg="12" md="9" sm="9">
+        <v-col cols="9" lg="12" md="9" sm="9">
           <div
             class="text-center text-lg-h3 text-md-h3 text-sm-h3 text-h4 font-weight-bold pb-lg-5 pb-md-5 pb-sm-5 pb-5"
           >
@@ -21,24 +21,24 @@
             accusantium.
           </div>
         </v-col>
-        <img
-          src="../assets/img/landing-181-1.jpg"
-          alt="Img-1"
-          class="rounded-lg mx-lg-auto py-lg-5 py-md-5 py-sm-5 py-5"
-          width="auto"
-          height="auto"
-        />
+        <v-col cols="12" lg="12" md="12" sm="12" class="text-center">
+          <img
+              src="../assets/img/landing-181-1.jpg"
+              alt="Img-1"
+              class="rounded-lg pa-lg-5 pa-md-5 pa-sm-5 pa-5"
+              :style="{ 'max-width': '100%', height: 'auto' }"
+            />
+        </v-col>
       </v-row>
     </v-col>
     <v-col cols="12" lg="5" md="6" sm="12" class="mx-auto mx-lg-auto">
       <v-row no-gutters justify="center" align="center">
-        <img
-          src="../assets/img/landing-181-2.jpg"
-          alt="Img-1"
-          class="rounded-lg mx-lg-auto py-lg-5 py-md-5 py-sm-5 py-5"
-          width="auto"
-          height="auto"
-        />
+         <img
+              src="../assets/img/landing-181-2.jpg"
+              alt="Img-1"
+              class="rounded-lg pa-lg-5 pa-md-5 pa-sm-5 pa-5"
+              :style="{ 'max-width': '100%', height: 'auto' }"
+            />
       </v-row>
     </v-col>
   </v-row>
