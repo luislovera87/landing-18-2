@@ -16,13 +16,13 @@
           sm="6"
           class="text-lg-h2 text-md-h3 text-sm-h3 text-h3 landing-title-0 mt-lg-0 mt-lg-0 white--text mx-lg-auto mx-md-auto mx-sm-auto mx-auto text-center py-lg-5 py-md-5 py-sm-5 py-5"
         >
-          Clean landing page theme for divi builder
+          Clean landing page theme for tech companies
         </v-col>
         <v-col cols="12" lg="12">
           <v-row no-gutters justify="center">
-            <v-col cols="9" lg="7" class="d-inline-flex white rounded-lg pa-4">
+            <v-col cols="12" lg="7" md="9" sm="9" class="d-inline-flex transparent rounded-lg pa-4">
               <v-row no-gutters justify="center" align="center">
-                <v-col cols="12" lg="4" class="py-2">
+                <v-col cols="12" lg="4" md="4" sm="4" class="pa-2 pa-lg-2 pa-md-2 pa-sm-2">
                   <v-text-field
                     label="Solo"
                     placeholder="First Name"
@@ -30,9 +30,10 @@
                     full-width
                     height="100%"
                     hide-details="auto"
+                    class="rounded-lg"
                   ></v-text-field>
                 </v-col>
-                <v-col cols="12" lg="4" class="py-2">
+                <v-col cols="12" lg="4" md="4" sm="4" class="pa-2 pa-lg-2 pa-md-2 pa-sm-2">
                   <v-text-field
                     label="Solo"
                     placeholder="Last Name"
@@ -40,17 +41,18 @@
                     full-width
                     height="100%"
                     hide-details="auto"
+                    class="rounded-lg"
                   ></v-text-field
                 ></v-col>
-                <v-col cols="12" lg="3" class="py-2">
+                <v-col cols="12" lg="3" md="3" sm="3" class="pa-2 pa-lg-2 pa-md-2 pa-sm-2">
                   <v-hover v-slot="{ hover }"
                     ><v-btn
-                      class="subscribe-button"
+                      class="rounded-lg subscribe-button"
                       :color="hover ? 'success' : 'accent'"
                       width="100%"
                       height="56px"
                     >
-                      Subscribe
+                      Login
                     </v-btn></v-hover
                   ></v-col
                 >
@@ -110,7 +112,7 @@ export default {
         rgba(8, 12, 22, 0.81) 0%,
         rgba(8, 12, 22, 0.81) 100%
       ),
-      url(../assets/img/landing-184-1.jpg) !important;
+      url(../assets/img/landing-184-1-2.jpg) !important;
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;

@@ -10,6 +10,7 @@
         <SectionTwo />
         <DefaultDivider />
         <SectionThree />
+        <SectionFour />
       </v-container>
     </v-main>
   </v-app>
@@ -19,6 +20,7 @@
 import SectionOne from "./components/SectionOne.vue";
 import SectionTwo from "./components/SectionTwo.vue";
 import SectionThree from "./components/SectionThree.vue";
+import SectionFour from './components/SectionFour.vue';
 import DefaultDivider from "./components/DefaultDivider.vue";
 
 export default {
@@ -28,6 +30,7 @@ export default {
     SectionOne,
     SectionTwo,
     SectionThree,
+    SectionFour,
     DefaultDivider,
   },
 

@@ -1,5 +1,5 @@
 <template>
-  <v-row no-gutters>
+  <v-row no-gutters class="py-lg-15 py-15">
     <v-col cols="12" lg="12" class="py-lg-15 py-md-8 py-sm-15 py-5">
       <v-row no-gutters justify="center" align="center">
         <v-col cols="9" lg="12">
