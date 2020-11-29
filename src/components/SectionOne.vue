@@ -1,7 +1,7 @@
 <template>
   <v-row no-gutters>
-    <v-col cols="12" class="landing-section-0 with-background">
-      <v-row>
+    <v-col cols="12" lg="12" class="landing-section-0 with-background">
+      <v-row no-gutters>
         <v-col
           cols="12"
           class="text-overline text-center your-content-text pt-lg-0 pt-0"
@@ -11,15 +11,18 @@
         </v-col>
         <v-col
           cols="12"
-          class="text-lg-h2 text-md-h3 text-sm-h4 text-h3 landing-title-0 mt-lg-0 mt-lg-0 white--text mx-lg-auto mx-md-auto mx-sm-auto mx-auto text-center"
+          lg="6"
+          md="6"
+          sm="6"
+          class="text-lg-h2 text-md-h3 text-sm-h3 text-h3 landing-title-0 mt-lg-0 mt-lg-0 white--text mx-lg-auto mx-md-auto mx-sm-auto mx-auto text-center py-lg-5 py-md-5 py-sm-5 py-5"
         >
           Clean landing page theme for divi builder
         </v-col>
         <v-col cols="12" lg="12">
-          <v-row justify="center">
-            <v-col cols="9" lg="7" class="d-inline-flex white rounded-lg">
-              <v-row justify="center" align="center">
-                <v-col cols="12" lg="4">
+          <v-row no-gutters justify="center">
+            <v-col cols="9" lg="7" class="d-inline-flex white rounded-lg pa-4">
+              <v-row no-gutters justify="center" align="center">
+                <v-col cols="12" lg="4" class="py-2">
                   <v-text-field
                     label="Solo"
                     placeholder="First Name"
@@ -29,7 +32,7 @@
                     hide-details="auto"
                   ></v-text-field>
                 </v-col>
-                <v-col cols="12" lg="4">
+                <v-col cols="12" lg="4" class="py-2">
                   <v-text-field
                     label="Solo"
                     placeholder="Last Name"
@@ -39,7 +42,7 @@
                     hide-details="auto"
                   ></v-text-field
                 ></v-col>
-                <v-col cols="12" lg="3">
+                <v-col cols="12" lg="3" class="py-2">
                   <v-hover v-slot="{ hover }"
                     ><v-btn
                       class="subscribe-button"
@@ -59,8 +62,21 @@
           cols="12"
           class="white--text text-overline text-center your-content-text pt-lg-5 pt-5"
         >
-          <v-icon :v-text="'play-circle-outline'"></v-icon>
-          YOUR VIDEO CONTENT GOES HERE
+          <v-row no-gutters align="center" justify="center">
+            <v-hover v-slot="{ hover }">
+              <v-col
+                lg="3"
+                md="3"
+                sm="12"
+                cols="12"
+                class="video-content-text"
+                :class="{ 'transform-zoom': hover }"
+              >
+                <v-icon class="white--text">play_circle_outline</v-icon>
+                YOUR VIDEO CONTENT GOES HERE
+              </v-col>
+            </v-hover>
+          </v-row>
         </v-col>
       </v-row>
     </v-col>
@@ -135,5 +151,15 @@ export default {
     height: 700px;
     margin-bottom: 100px;
   }
+}
+
+.video-content-text.transform-zoom {
+  cursor: pointer;
+  transform: scaleX(1.1) scaleY(1.1) !important;
+  transition: 0.3s transform ease-in-out;
+}
+
+.video-content-text:not(.transform-zoom) {
+  transition: 0.3s transform ease-in-out;
 }
 </style>
