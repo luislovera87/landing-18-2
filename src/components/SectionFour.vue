@@ -23,22 +23,22 @@
         </v-col>
         <v-col cols="12" lg="12" md="12" sm="12" class="text-center">
           <img
-              src="../assets/img/landing-181-1.jpg"
-              alt="Img-1"
-              class="rounded-lg pa-lg-5 pa-md-5 pa-sm-5 pa-5"
-              :style="{ 'max-width': '100%', height: 'auto' }"
-            />
+            src="../assets/img/landing-181-1.jpg"
+            alt="Img-1"
+            class="rounded-lg pa-lg-5 pa-md-5 pa-sm-5 pa-5"
+            :style="{ 'max-width': '100%', height: 'auto' }"
+          />
         </v-col>
       </v-row>
     </v-col>
     <v-col cols="12" lg="5" md="6" sm="12" class="mx-auto mx-lg-auto">
       <v-row no-gutters justify="center" align="center">
-         <img
-              src="../assets/img/landing-181-2.jpg"
-              alt="Img-1"
-              class="rounded-lg pa-lg-5 pa-md-5 pa-sm-5 pa-5"
-              :style="{ 'max-width': '100%', height: 'auto' }"
-            />
+        <img
+          src="../assets/img/landing-181-2.jpg"
+          alt="Img-1"
+          class="rounded-lg pa-lg-5 pa-md-5 pa-sm-5 pa-5"
+          :style="{ 'max-width': '100%', height: 'auto' }"
+        />
       </v-row>
     </v-col>
   </v-row>
