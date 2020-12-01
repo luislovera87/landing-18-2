@@ -2,92 +2,126 @@
   <v-row
     id="section-five-container"
     no-gutters
-    class="py-lg-15 py-15 mx-auto mx-lg-auto mx-md-auto mx-sm-auto"
+    class="py-lg-15 py-15"
     justify="center"
-    align="start"
+    align="center"
   >
-    <v-col
-      cols="10"
-      lg="5"
-      md="5"
-      sm="10"
-      class="left-section-container white--text"
-    >
-      <v-row align="center" justify="center">
-        <div
-          class="text-center text-lg-h3 text-md-h3 text-sm-h3 text-h4 font-weight-bold pb-lg-5 pb-md-5 pb-sm-5 pb-5"
+    <v-col lg="5" md="12" sm="12" cols="12" class="white--text">
+      <v-row no-gutters justify="start" align="center">
+        <v-col
+          cols="9"
+          md="10"
+          sm="9"
+          lg="12"
+          class="pb-lg-5 pb-md-5 pb-sm-5 pb-5 pl-lg-0 pl-md-15 pl-sm-15 pl-15"
         >
-          Featured Services
-        </div>
-        <div
-          class="text-center mx-lg-auto mx-md-auto mx-sm-auto mx-auto alternative-text-color py-lg-5 py-md-5 py-sm-5 py-5"
-          :style="{ 'max-width': '450px' }"
-        >
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium.
-        </div>
-        <div class="d-inline-flex">
-          <div>
-            <img
-              src="../assets/img/landing-184-2.png"
-              alt="check-icon"
-              width="30"
-            />
-          </div>
-          <v-alert
-            color="transparent"
-            class="white--text mx-lg-auto mx-md-auto mx-sm-aut0 mx-auto pt-0 pt-lg-0 pt-md-0 pt-sm-0"
-            :style="{ 'max-width': '350px' }"
-          >
-            <div>
-              <div class="text-h5 font-weight bold">24/7 Fast Support</div>
-              <div class="text-subtitle">
-                Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec,
-                nisi. Vivamus quis mi. Quisque ut nisi. Maecenas malesuada.
-              </div>
-            </div>
-          </v-alert>
-        </div>
-        <div class="d-inline-flex">
-          <div>
-            <img
-              src="../assets/img/landing-184-2.png"
-              alt="check-icon"
-              width="30"
-            />
-          </div>
-          <v-alert
-            color="transparent"
-            class="white--text mx-lg-auto mx-md-auto mx-sm-aut0 mx-auto pt-0 pt-lg-0 pt-md-0 pt-sm-0"
-            :style="{ 'max-width': '350px' }"
-          >
-            <div class="text-h5 font-weight bold">Free Website Setup</div>
-            <div class="text-subtitle">
-              Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec,
-              nisi. Vivamus quis mi. Quisque ut nisi. Maecenas malesuada.
-            </div>
-          </v-alert>
-        </div>
+          <v-row justify="start" align="center">
+            <v-col
+              cols="12"
+              lg="12"
+              md="12"
+              sm="12"
+              class="text-lg-h3 text-md-h3 text-sm-h3 text-h4 font-weight-bold"
+              :style="{ 'max-width': '500px' }"
+            >
+              Exercita tion ullam corpor suscit.
+            </v-col>
+            <v-col
+              cols="12"
+              lg="12"
+              md="12"
+              sm="12"
+              class="subtitle-default-text white--text"
+              :style="{ 'max-width': '500px' }"
+            >
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium.
+            </v-col>
+            <v-col
+              cols="12"
+              lg="12"
+              md="12"
+              sm="12"
+              :style="{ 'max-width': '500px' }"
+            >
+              <v-row>
+                <div class="d-inline-flex">
+                  <div>
+                    <img
+                      src="../assets/img/landing-184-2.png"
+                      alt="check-icon"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <div class="check-description-container text-left">
+                    <div class="font-weight-bold text-h6">
+                      24/7 Fast Support
+                    </div>
+                    <div
+                      class="subtitle-default-text alternative-text-color text-body-1"
+                      :style="{ 'max-width': '300px' }"
+                    >
+                      Esse quam nihil molestiae conse vel illum eum fugiat
+                      voluptas nulla exceurs pariatur.
+                    </div>
+                  </div>
+                </div>
+              </v-row>
+              <v-row>
+                <div class="d-inline-flex">
+                  <div>
+                    <img
+                      src="../assets/img/landing-184-2.png"
+                      alt="check-icon"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <div class="check-description-container text-left">
+                    <div class="font-weight-bold text-h6">
+                      Free Website Setup
+                    </div>
+                    <div
+                      class="subtitle-default-text alternative-text-color text-body-1"
+                      :style="{ 'max-width': '300px' }"
+                    >
+                      Esse quam nihil molestiae conse vel illum eum fugiat
+                      voluptas nulla exceurs pariatur.
+                    </div>
+                  </div>
+                </div>
+              </v-row>
+            </v-col>
+          </v-row>
+        </v-col>
       </v-row>
     </v-col>
-    <v-col cols="11" lg="5" md="5" sm="10">
-      <div
-        class="right-section-container mx-lg-5 mx-md-5 mx-sm-5 mx-1 pa-lg-10 pa-md-10 pa-sm-10 pa-1 rounded-lg"
-      >
-        <v-expansion-panels focusable accordion :mandatory="true">
-          <v-expansion-panel v-for="(item, i) in panelItems" :key="i">
-            <v-expansion-panel-header class="font-weight-bold text-h6 white">
-              {{ item.title }}
-              <template v-slot:actions>
-                <v-icon color="black">add_circle</v-icon>
-              </template>
-            </v-expansion-panel-header>
-            <v-expansion-panel-content class="subtitle-default-text">{{
-              item.description
-            }}</v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
-      </div>
+    <v-col lg="5" md="12" sm="12" cols="12" class="pl-lg-15 pl-md-15 pl-sm-15 pl-8">
+      <v-row align="center" justify="start">
+        <v-col
+          lg="12"
+          md="8"
+          sm="11"
+          cols="11"
+          class="right-section-container rounded-lg"
+        >
+          <v-expansion-panels focusable accordion :mandatory="true">
+            <v-expansion-panel v-for="(item, i) in panelItems" :key="i">
+              <v-expansion-panel-header class="font-weight-bold text-h6 white">
+                {{ item.title }}
+                <template v-slot:actions>
+                  <v-icon color="black">add_circle</v-icon>
+                </template>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content
+                class="subtitle-default-text text-body-1"
+                >{{ item.description }}</v-expansion-panel-content
+              >
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
+      </v-row>
     </v-col>
   </v-row>
 </template>
@@ -140,9 +174,10 @@ export default {
 }
 
 .alternative-text-color {
-  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
-  font-size: 18px;
-  line-height: 1.8em;
-  color: "#ffffffb3!important";
+  color: #ffffffb3 !important;
+}
+
+.check-description-container {
+  padding: 0 20px 20px 20px;
 }
 </style>

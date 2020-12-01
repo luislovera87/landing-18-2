@@ -68,5 +68,6 @@ select {
   font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
   font-size: 18px;
   line-height: 1.8em;
+  font-weight: 600;
 }
 </style>
